@@ -28,8 +28,8 @@ server {
         proxy_pass https://cdn.jsdelivr.net/gh/selfhst/icons/;
     }
 
-    # /dashboard-icons/... -> https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/...
-    location /dashboard-icons/ {
+    # /icons/... -> https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/...
+    location /icons/ {
         proxy_intercept_errors on;
         error_page 301 302 307 308 = @handle_redirect;
         proxy_pass https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/;

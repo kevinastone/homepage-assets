@@ -1,6 +1,5 @@
 # Stage 1: Assets stage
 FROM scratch AS assets
-COPY icons /icons
 COPY theme /theme
 COPY custom /custom
 
